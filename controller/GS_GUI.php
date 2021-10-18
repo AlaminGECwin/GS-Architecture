@@ -37,7 +37,7 @@ class GS_GUI_Controller{
 		$role="admin";
 		$sql="INSERT INTO `user`(`name`, `email`, `role`, `password`) VALUES ('".$name."','".$email."','".$role."','".$password."')";
 		$this->model->execute_query($sql);
-		echo "<script>location='index.php?function=get_in'</script>";
+		echo "<script>location='demos/login-form-09/index.html'</script>";
 
 
 	}
