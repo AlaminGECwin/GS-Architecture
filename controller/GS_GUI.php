@@ -10,6 +10,10 @@ class GS_GUI_Controller{
 	    
 		include(getURL('home'));
 	}
+	function gs(){
+	    
+		include(getURL('gs'));
+	}
 	function connect(){
 	    
 		include(getURL('connect'));
