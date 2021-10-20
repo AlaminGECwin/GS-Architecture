@@ -5,18 +5,10 @@ class GS_GUI_Controller{
 		include('controller/supporters.php');
 		$this->model=new GS_Model();//model class
 		
-
 	}
-
 	function home(){
 	    
 		include(getURL('home'));
-
-	}
-	function gs(){
-	    
-		include(getURL('gs'));
-
 	}
 	function connect(){
 	    

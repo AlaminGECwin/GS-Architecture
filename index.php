@@ -23,7 +23,7 @@ if(file_exists('controller/'.$controller.'.php')){
 
 	$class=$controller.'_Controller';//important for naming convention
 	
-	$obj=new $class();//creating object for controller. model problem.
+	$obj=new $class();//creating object for controller. model problem. $obj=new GS_GUI_Controller();
 	
 	if(method_exists($class,$function)){
 	    //include(getURL('under/index'));
