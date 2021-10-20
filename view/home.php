@@ -13,7 +13,7 @@
       .ring
         {
           position:absolute;
-          top:70%;
+          top:79%;
           left:50%;
           transform:translate(-50%, -50%);
           width:70px;
@@ -94,6 +94,43 @@
     <title>Hello, Developer!</title>
   </head>
   <body style="background-color:#f2f2f2">
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#f2f2f2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.php"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="d-flex bd-highlight mb-3">
+        
+        <div class="ms-auto p-2 bd-highlight">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
+            
+            <?php if(isset($_SESSION['password'])){ ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <?php 
+              echo $_SESSION['name'];
+              ?>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="<?php route('log_out');?>">Log Out</a></li>
+              </ul>
+            </li>
+            <?php } ?>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
   
       <div class="mx-auto w-50">
       <img src="assets/logo/gsl.png" class="img-fluid  " alt="">
