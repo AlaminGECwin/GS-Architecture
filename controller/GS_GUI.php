@@ -1,6 +1,4 @@
 <?php
-
-
 class GS_GUI_Controller{
 	function __construct(){
 		include('model/db.php');//database
@@ -79,13 +77,6 @@ class GS_GUI_Controller{
 		session_destroy();
 		location("home");
 	}
-
-	
-
-	
-
-	
-
 	
 }
 ?>
