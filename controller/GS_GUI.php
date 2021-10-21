@@ -51,7 +51,7 @@ class GS_GUI_Controller{
 			$_SESSION['email']=$data[0]['email'];
 			$_SESSION['password']=$data[0]['password'];
 			$_SESSION['role']=$data[0]['role'];
-			echo "<script>location='index.php?function=dashboard'</script>";
+			echo "<script>location='index.php?function=home'</script>";
 		}else{
 			location("gs");
 		}

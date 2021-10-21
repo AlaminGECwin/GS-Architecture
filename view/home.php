@@ -115,13 +115,15 @@
               ?>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="<?php route('dashboard');?>">Dashboard</a></li>
                 <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="<?php route('log_out');?>">Log Out</a></li>
               </ul>
             </li>
-            <?php } ?>
+            <?php }else{ ?>
+              <a class="navbar-brand" href="demos/login-form-09/">Get in</a>
+              <?php }?>
             
           </ul>
         </div>
