@@ -10,6 +10,12 @@ function getURL($page_name){
 		return 'view/'.$page_name.'.php';
 }
 
+function add_css_framework($css_framework){
+	return "assets/".$css_framework."/css/bootstrap.min.css";
+}
+function add_css_framework_js($css_framework_js){
+	return "assets/".$css_framework_js."/js/bootstrap.bundle.min.js";
+}
 function security($password){
     if($password=="rsamv"){
         

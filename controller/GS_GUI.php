@@ -7,6 +7,10 @@ class GS_GUI_Controller{
 		
 	}
 	function home(){
+
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
+
 	    
 		include(getURL('home'));
 	}
