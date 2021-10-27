@@ -10,8 +10,6 @@ class GS_GUI_Controller{
 
 		$css_framework=add_css_framework("bootstrap5");
 		$css_framework_js=add_css_framework_js("bootstrap5");
-
-	    
 		include(getURL('home'));
 	}
 	function gs(){
@@ -57,25 +55,19 @@ class GS_GUI_Controller{
 			$_SESSION['role']=$data[0]['role'];
 			echo "<script>location='index.php?function=home'</script>";
 		}else{
-			location("gs");
+			location('home');
 		}
 		
 		
 	}
 	function dashboard(){
-		
-		if(isset($_SESSION['password']))
-		{
-			include(getURL('dashboard'));
 
-		}else{
-			route("gs");
-		}
+		include_with_session('dashboard','bootstrap5');		
 
 	}
 	function log_out(){
 		session_destroy();
-		location("home");
+		location('home');
 	}
 	
 }
