@@ -20,7 +20,31 @@
           <button type="button" class="btn btn-primary">Log Out</button>
       </a>
 
+      <table class="table table-success table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#sl</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">Role</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach($data as $row){?>
+          <tr>
+            <th scope="row"><?php echo $row['id'];?></th>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['email'];?></td>
+            <td><?php echo $row['password'];?></td>
+            <td><?php echo $row['role'];?></td>
+            <td><a href="<?php delete($row['id']); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
 
+          </tr>
+          <?php }?>
+        </tbody>
+      </table>
 
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -61,9 +61,26 @@ class GS_GUI_Controller{
 		
 	}
 	function dashboard(){
+		//adding css framework
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
 
-		include_with_session('dashboard','bootstrap5');		
+		//getting data
+		$sql="SELECT * FROM `user`";		
+		$data=$this->model->read_query($sql);
 
+		//checking session and include dashboard
+		check_session();
+		include(getURL('dashboard'));		
+
+	}
+	function delete(){
+		//geting id
+		$id=$_GET['id'];
+		//deleting data
+		$sql="DELETE FROM `user` WHERE id=".$id;		
+		$this->model->execute_query($sql);
+		location('dashboard');
 	}
 	function log_out(){
 		session_destroy();

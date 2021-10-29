@@ -1,12 +1,11 @@
 <?php
-function include_with_session($page_name,$css_framework){
-	$css_framework=add_css_framework($css_framework);
-	$css_framework_js=add_css_framework_js($css_framework);
-	if(isset($_SESSION['password']))
-	{
-		include(getURL($page_name));
+function delete($id){
+	echo "index.php?function=delete&id=".$id;
 
-	}else{
+}
+function check_session(){	
+	if(!isset($_SESSION['password']))
+	{
 		location("home");
 	}
 }
