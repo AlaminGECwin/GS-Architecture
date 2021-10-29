@@ -71,7 +71,12 @@ class GS_GUI_Controller{
 
 		//checking session and include dashboard
 		check_session();
-		include(getURL('dashboard'));		
+
+		//edit page
+		include(getURL('header'));
+		include(getURL('dashboard'));
+		include(getURL('footer'));
+				
 
 	}
 	function delete(){
@@ -82,6 +87,27 @@ class GS_GUI_Controller{
 		$this->model->execute_query($sql);
 		location('dashboard');
 	}
+
+	function edit(){
+		//geting id
+		$id=$_GET['id'];
+
+		//geting data
+		$sql="SELECT * FROM `user` WHERE id='".$id."'";		
+		$data=$this->model->read_query($sql);
+
+
+		//adding css framework
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
+
+		//edit page
+		include(getURL('header'));
+		include(getURL('edit'));
+		include(getURL('footer'));
+		
+	}
+
 	function log_out(){
 		session_destroy();
 		location('home');

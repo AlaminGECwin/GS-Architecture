@@ -1,5 +1,8 @@
 <?php
-function delete($id){
+function edit($id){
+	echo "index.php?function=edit&id=".$id;
+
+}function delete($id){
 	echo "index.php?function=delete&id=".$id;
 
 }
