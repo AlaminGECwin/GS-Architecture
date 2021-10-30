@@ -23,7 +23,7 @@
       
       <div class="d-flex bd-highlight mb-3">
         
-        <div class="ms-auto p-2 bd-highlight">
+        <div class="ms-auto p-2 bd-highlight mx-3">
           <ul class="navbar-nav  mb-2 mb-lg-0 ">
             
             <?php if(isset($_SESSION['password'])){ ?>

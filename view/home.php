@@ -102,7 +102,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <div class="d-flex bd-highlight mb-3">
+      <div class="d-flex bd-highlight mb-3 mx-3">
         
         <div class="ms-auto p-2 bd-highlight">
           <ul class="navbar-nav  mb-2 mb-lg-0 ">

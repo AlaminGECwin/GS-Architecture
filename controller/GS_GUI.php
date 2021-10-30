@@ -89,6 +89,9 @@ class GS_GUI_Controller{
 	}
 
 	function edit(){
+		//checking session and include dashboard
+		check_session();
+
 		//geting id
 		$id=$_GET['id'];
 
@@ -106,6 +109,16 @@ class GS_GUI_Controller{
 		include(getURL('edit'));
 		include(getURL('footer'));
 		
+	}
+	function update(){
+		$id=$_POST['id'];
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$password=$_POST['password'];
+		$role="admin";
+		$sql="UPDATE `user` SET `id`='$id',`name`='$name',`email`='$email',`role`='$role',`password`='$password' WHERE `id`='$id' ";
+		$this->model->execute_query($sql);
+		location('dashboard');
 	}
 
 	function log_out(){
