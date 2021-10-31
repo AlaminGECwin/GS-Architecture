@@ -8,24 +8,51 @@ class GS_GUI_Controller{
 	}
 	function home(){
 
+		//adding css framework
 		$css_framework=add_css_framework("bootstrap5");
 		$css_framework_js=add_css_framework_js("bootstrap5");
+
+		//Home page
 		include(getURL('home'));
 	}
+
+	function dashboard(){
+		//adding css framework
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
+
+		//getting data
+		$sql="SELECT * FROM `user`";		
+		$data=$this->model->read_query($sql);
+
+		//checking session and include dashboard
+		check_session();
+
+		//edit page
+		include(getURL('header'));
+		include(getURL('dashboard'));
+		include(getURL('footer'));
+				
+
+	}
+
 	function gs(){
 	    
 		include(getURL('gs'));
 	}
+
 	function connect(){
 	    
 		include(getURL('connect'));
 
 	}
+
 	function get_in(){
 	    
 		include(getURL('get_in'));
 
 	}
+
 	function register(){
 		$name=$_POST['name'];
 		$email=$_POST['email'];
@@ -60,25 +87,7 @@ class GS_GUI_Controller{
 		
 		
 	}
-	function dashboard(){
-		//adding css framework
-		$css_framework=add_css_framework("bootstrap5");
-		$css_framework_js=add_css_framework_js("bootstrap5");
-
-		//getting data
-		$sql="SELECT * FROM `user`";		
-		$data=$this->model->read_query($sql);
-
-		//checking session and include dashboard
-		check_session();
-
-		//edit page
-		include(getURL('header'));
-		include(getURL('dashboard'));
-		include(getURL('footer'));
-				
-
-	}
+	
 	function delete(){
 		//geting id
 		$id=$_GET['id'];
@@ -110,6 +119,8 @@ class GS_GUI_Controller{
 		include(getURL('footer'));
 		
 	}
+
+
 	function update(){
 		$id=$_POST['id'];
 		$name=$_POST['name'];
@@ -121,10 +132,10 @@ class GS_GUI_Controller{
 		location('dashboard');
 	}
 
+
 	function log_out(){
 		session_destroy();
 		location('home');
-	}
-	
+	}	
 }
 ?>
