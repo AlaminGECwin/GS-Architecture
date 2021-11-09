@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="<?php echo $css_framework;?>" rel="stylesheet" >
+    
+    <!-- Custom CSS -->
+    <link href="<?php echo $css_custom;?>" rel="stylesheet" >
 
     <link rel="shortcut icon" href="assets/logo/gs.png">
 
@@ -14,7 +17,7 @@
   </head>
   <body style="background-color:#f2f2f2">
 
-  <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#f2f2f2">
+  <nav class="navbar navbar-expand-lg navbar-light mx-5 px-5 " style="background-color:#f2f2f2">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +44,7 @@
               </ul>
             </li>
             <?php }else{ ?>
-              <a class="navbar-brand" href="demos/login-form-09/">Get in</a>
+              <a class="navbar-brand" href="<?php route('get_in');?>">Get in</a>
               <?php }?>
             
           </ul>

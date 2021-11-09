@@ -12,10 +12,36 @@ class GS_GUI_Controller{
 		$css_framework=add_css_framework("bootstrap5");
 		$css_framework_js=add_css_framework_js("bootstrap5");
 
-		//Home page
-		include(getURL('home'));
-	}
+		//adding css custom
+		$css_custom=add_css_custom("custom_1");
 
+		//Home page
+		include(getURL('header'));
+		include(getURL('home'));
+		include(getURL('footer'));
+	}
+	function get_in(){
+		//adding css framework
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
+
+
+		//edit page
+		include(getURL('header'));
+		include(getURL('get_in'));
+		include(getURL('footer'));
+	}
+	function sign_up(){
+		//adding css framework
+		$css_framework=add_css_framework("bootstrap5");
+		$css_framework_js=add_css_framework_js("bootstrap5");
+
+
+		//edit page
+		include(getURL('header'));
+		include(getURL('sign_up'));
+		include(getURL('footer'));
+	}
 	function dashboard(){
 		//adding css framework
 		$css_framework=add_css_framework("bootstrap5");
@@ -47,11 +73,7 @@ class GS_GUI_Controller{
 
 	}
 
-	function get_in(){
-	    
-		include(getURL('get_in'));
-
-	}
+	
 
 	function register(){
 		$name=$_POST['name'];
@@ -60,7 +82,7 @@ class GS_GUI_Controller{
 		$role="admin";
 		$sql="INSERT INTO `user`(`name`, `email`, `role`, `password`) VALUES ('".$name."','".$email."','".$role."','".$password."')";
 		$this->model->execute_query($sql);
-		echo "<script>location='demos/login-form-09/index.html'</script>";
+		location("get_in");
 
 
 	}

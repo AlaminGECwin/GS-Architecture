@@ -29,6 +29,9 @@ function add_css_framework($css_framework){
 function add_css_framework_js($css_framework_js){
 	return "assets/".$css_framework_js."/js/bootstrap.bundle.min.js";
 }
+function add_css_custom($css_custom){
+	return "assets/customcss/".$css_custom.".css";
+}
 function security($password){
     if($password=="rsamv"){
         

@@ -1,0 +1,77 @@
+[33mcommit 2e7f5c3cbbc13ba0016bcc7665aff248de4a9a8b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mgs[m[33m)[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Sun Oct 31 11:08:28 2021 +0600
+
+    solve dashboard problem where dropdown was not working
+
+[33mcommit 632b97ad302ee37656cd571070671f700433cb4d[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Sat Oct 30 23:03:19 2021 +0600
+
+    updating control has been done
+
+[33mcommit ae5368eb545089b77a0e9812a41cb39ce0267eb8[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Fri Oct 29 23:17:46 2021 +0600
+
+    updating data
+
+[33mcommit 964b5446fdb8bcc19b317712fa25c78e4034aee9[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Fri Oct 29 22:35:32 2021 +0600
+
+    delete option has been added
+
+[33mcommit 41aa74d724f6a8b664d833ddbeb3cd6979cdcbae[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Wed Oct 27 07:10:45 2021 +0600
+
+    adding new function for including with session and passing framework
+
+[33mcommit 1fa7ff620cb645b5e11e78c466f4e026369fb900[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Tue Oct 26 22:55:40 2021 +0600
+
+    update home
+
+[33mcommit 41f0d9487a3962f7a94fdbef5bced64c308c52cc[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Thu Oct 21 07:25:51 2021 +0600
+
+    solve routings for home view.
+
+[33mcommit 369aa91cb1fe0a318df052d43bb14e203d73308a[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Thu Oct 21 00:04:27 2021 +0600
+
+    added navbar in home view
+
+[33mcommit 914addfdac8fad8fe77c3870110d7214068a1fc3[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Wed Oct 20 22:38:43 2021 +0600
+
+    adding gs function
+
+[33mcommit b061b7e983f1200fdab4527003466115aa16c17c[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Wed Oct 20 20:50:09 2021 +0600
+
+    update some isue
+
+[33mcommit 405969ebc14831879063ec74684b0a7542c43063[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Wed Oct 20 18:38:55 2021 +0600
+
+    remove space
+
+[33mcommit f4125772ab2dd327bfbfe08f1731c6bd2ae2da28[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Mon Oct 18 08:09:45 2021 +0600
+
+    registration can redirect to get in function
+
+[33mcommit d89efc209f28e72efdb92ef530b1d95564d00ead[m
+Author: AlaminGECwin <alaminwindows10pc@gmail.com>
+Date:   Sat Oct 16 07:30:28 2021 +0600
+
+    GS-Architecture 0.1 v
